@@ -1,0 +1,43 @@
+entries:
+  - Software:
+    - Software
+    - Infinum VPN
+  - General coding practices:
+    - Commenting code
+    - API design
+  - Day to day work:
+    - Software development methodologies
+    - Development cards
+    - Test devices & test devices management
+    - Dependency updates
+    - Crash reports on Slack
+    - Offboarding a project
+    - Technical One-on-One
+    - Design implementation checklist
+    - Presenting your work
+  - Cooperations:
+    - QA-Mobile
+    - Design-Mobile
+  - Git:
+    - Git basics & source code versioning
+    - Pull requests
+    - Using Git
+    - Git for mobile platforms
+  - General tools:
+    - Using ChatGPT
+    - Using Postman
+    - Using Vault
+    - Using Docker
+  - Mobile tools:
+    - Using Firebase
+    - Using Charles
+    - Using Proxyman
+    - Using ADB
+  - Web tools:
+    - Using Chrome Dev Tools
+  - Performance testing:
+    - Introduction
+    - Implementation
+  - Internal tools:
+    - Productive
+    - Tryout apps
