@@ -25,4 +25,5 @@ Estimating based on remembered data is fraught with inaccuracies.
 If you or one of your colleagues worked on a similar project, a good starting point is talking about it, but it's also prudent to get access to Productive's Insights and query the relevant data. Group it and categorize by the required service (e.g., Backend, Rails). How similar were the requirements of a feature to the one we're contemplating? How many people worked on it, in what role, and for how long? Were there a lot of meetings and why?
 
 ### Successful negotiation
+
 Once a project start it's crucial not to take the ballpark estimation
