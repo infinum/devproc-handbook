@@ -3,7 +3,6 @@ We use this term for scenarios when the business development team negotiates wit
 To help you jumpstart this task, we prepared:
 
 * our official [Estimates detailed template](https://docs.google.com/spreadsheets/d/1SHeL-7NNmobVgEbNAY5ggLrEHh2iclG-G5u1BF53SH4/edit#gid=238358947) - check with the people involved in the potential project if someone already duplicated this template
-* the [Rails estimation template](https://docs.google.com/spreadsheets/d/1vXm2OPBFw1fAgUZEoXLkJNZualOqrZBRd9EKvpIzrY8) - contains some useful prefilled components that can be used as a starting guide
 
 Before you begin plotting the major aspects of the project, read the documentation provided by the client or the product owner. In case there is no documentation, contact anyone who might be relevant and ask for it. Talk with people who have some experience on the project until you can visualize the requirements and gain enough confidence to make estimations.
 
