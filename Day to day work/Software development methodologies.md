@@ -1,0 +1,1 @@
+Rather than copying the chapter, here is the link to it in QA handbook: [Software development methodologies](/books/qa/basics/software-development-methodologies)

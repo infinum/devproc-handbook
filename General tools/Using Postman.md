@@ -1,0 +1,1 @@
+Our QA team wrote an excellent chapter on how to use Postman. You can check it here - [Using Postman](/books/qa/tools/using-postman)
