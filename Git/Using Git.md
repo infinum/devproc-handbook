@@ -117,7 +117,7 @@ After releasing a new version from the `release` branch, make sure to create a n
 
 ### Protected branches
 
-`main` and `release` branches should be marked as protected on GitHub in order to prevent direct push to those branches or accidental deletes. Next options should be checked on the branch protection rules page on Github:
+`main` and `release` branches must be marked as protected on GitHub in order to prevent direct push to those branches or accidental deletes. Next options should be checked on the branch protection rules page on Github:
 
 * Require pull request reviews before merging 
 ![](/img/using_git/protected_branch_1.png)
