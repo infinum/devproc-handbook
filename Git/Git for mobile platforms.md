@@ -16,6 +16,7 @@ The main branches in this flow are:
 
 * `main`
     * it is the main branch
+    * must be marked as protected on Github
     * anything in the main branch is deployable
     * is stable and it is always, always safe to deploy from it or create new branches off of it
     * feature and hotfix branches are merged into it only after pull request review is done
