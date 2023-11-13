@@ -40,5 +40,5 @@ Some of the examples:
 Anyone working on the project (i.e., Developers, Designers, QA, PM, etc.) should participate in creating this document. 
 This is the only documentation that is not defined by technology. So feel free to write it on a separate Wiki (GitHub) repo, Confluence, Productive, Google Docs, etc.
 
-
-
+---
+*In case you need some examples on how each level of documentation looks like in real life projects, please contact a proejct team that has such level of documetnation that interests you. For example, a good reference point to see this for a particular mobile projects is to check the Mobile Project Health Score sheet.*
