@@ -3,6 +3,7 @@
 The documentation should be separated into a few levels of the project you are working on. That way, anyone can easily find the info they are looking for by searching specific files section.
 
 Those levels are shown in the following diagram:
+
 ![](/img/project_documentation/documentation_chart.png)
 
 ### Base documentation - readme
