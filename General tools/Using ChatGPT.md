@@ -48,6 +48,36 @@ be a useful tool for software engineers in a variety of other everyday scenarios
   questions.
 * Kickstart research: ChatGPT can be used to gather information or research on a specific topic, particularly when
   working on a project or feature that is outside your area of expertise.
+* Debugging: we can improve our debugging process using ChatGPT, considering our existing practices.
+
+### Enhancing Our Debugging Approach with ChatGPT
+
+When faced with a bug we cannot solve, our usual workflow typically looks like this:
+
+1. **Solution search:** We search Google for a solution. This quick and efficient first step can guide us toward known solutions or new perspectives.
+2. **Consulting within the team:** If the problem is not quickly resolved, we seek help within our team. Sharing the problem with colleagues can lead to new insights and solutions.
+3. **Posting questions on forums:** If the team can't help, we post a question on Stack Overflow or similar platforms and wait for feedback from the wider community.
+
+By using ChatGPT as step 0, we can further enhance this process. Here's how:
+
+- **Asking clear questions:** Instead of general queries like "I have a problem with my code. It's not working.", we should provide ChatGPT with detailed context. For example, if the bug is that the correct result is calculated but not printed, we should ask, "Why is this code not printing the expected result?" instead of "Why is this code not calculating correctly?".
+- **Imitating your Rubber duck:** ChatGPT can serve as your "rubber duck" in debugging, explaining syntax and logic line by line, and suggesting alternative solutions. Just remember that ChatGPT functions best with smaller chunks of code, not entire classes at once.
+- **Giving it the context:** Technology Stack, Environment Details, Libraries and Dependencies. All of them can help when seeking assistance from ChatGPT
+- **Formatting:** Enclosing code in triple double quotes can help clarify that you are presenting code, especially if it spans multiple lines
+- **Sharing information:** Similar to sharing a bug with your team, when sharing a bug with ChatGPT, always specify what you expected from the code, what you got, and what you have already tried to solve the problem. This helps focus on the right question and reduces the time needed to find a solution. *
+- **Requesting follow-up questions:** we can tell ChatGPT to ask additional questions if it lacks enough information. Be open to this interaction to get to the core of the problem.
+- **Language tip:** In ChatGPT settings, set the response language to English and your native language (If English is not your native language, of course :) ). This can improve your understanding of the responses if you are not encouraged enough in your English skills.  ( Profile -> Customize -> How would you like ChatGPT to respond? )
+
+If you don’t know where to start:
+
+- Copy the error into the chat, but ask ChatGPT to explain the issue
+- Suggested solutions could be helpful, but the main thing is for you to understand the problem and determine if the proposed solution fits your use case.
+
+Our goal is to use ChatGPT as a tool to help us better understand the problems we face, not just as a means for copying and pasting ready-made solutions. Clarity and details in our communication with AI can significantly improve the quality of responses and help us debug more efficiently.
+
+Be encouraged to try these approaches but don't forget to share your experiences with each other to continuously improve your skills and processes. Our Slack team channels are knowledge repositories because we ask questions or share our journeys. Let's continue to do that by sharing how ChatGPT helped us fix our bugs, too.
+
+*Confidentiality - Similar to writing your question about some bug on a forum or Stack Overflow, you should not share sensitive information. It's crucial to maintain the confidentiality of our work while seeking assistance. OpenAI trains on our data unless we are using ChatGPT Team, ChatGPT Enterprise, or API Platform.
 
 ### Summary
 
