@@ -91,11 +91,11 @@ Talk with your project team if this could be implemented in a similar manner. Pe
 Internal presentations, plus when lot of collaboration needs to take place to get the deck content right.
 Pros: collaboration, sharing.
 Cons: limited in free tier, still lacking some features I’d expect in a deck tool but they are updating the app regularly
-- _Keynote</br>
+- _Keynote_</br>
 For highly polished client-facing proposals, sales decks, concepts.
 Pros: free, powerful features & customisation
 Cons: file size can be an issue, collaboration
-- _Google slides</br>
+- _Google slides_</br>
 internal reporting, where we can use information from Google Sheets, that fills in automatically.
 Pros: integration with google sheets
 Cons: difficult to work with in terms of layout design 
