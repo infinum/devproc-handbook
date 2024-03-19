@@ -84,3 +84,18 @@ Talk with your project team if this could be implemented in a similar manner. Pe
 
 - _We grow through feedback_</br>
   The best way to improve is through giving and receiving feedback. Often, the presentations are recorded. Make use of these opportunities and go through your presentation. This can help you pinpoint areas that you can improve on.
+
+## When should you use Pitch, Google Slides, or Keynote?
+
+- _Pitch_</br>
+Internal presentations, plus when lot of collaboration needs to take place to get the deck content right.
+Pros: collaboration, sharing.
+Cons: limited in free tier, still lacking some features I’d expect in a deck tool but they are updating the app regularly
+- _Keynote</br>
+For highly polished client-facing proposals, sales decks, concepts.
+Pros: free, powerful features & customisation
+Cons: file size can be an issue, collaboration
+- _Google slides</br>
+internal reporting, where we can use information from Google Sheets, that fills in automatically.
+Pros: integration with google sheets
+Cons: difficult to work with in terms of layout design 
