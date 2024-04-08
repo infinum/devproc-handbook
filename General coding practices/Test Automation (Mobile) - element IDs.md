@@ -20,7 +20,7 @@ The IDs added to elements should be **unique** (most importantly - be unique on 
 
 <span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![Android Naming Example](/img/test_automation/TA_Naming.png)</span>
 
-Developers can follow naming conventions for their respective platform (camelCase, snake_case, or other).
+Developers can follow naming conventions for their respective platform (*camelCase*, *snake_case*, or other).
 
 ## iOS
 
