@@ -1,25 +1,18 @@
 **Chapters:**
 
 - [General](#general)
-	- [Naming](#naming)
 - [Android](#android)
 	- [XML architecture](#xml-architecture)
-		- [Static elements:](#static-elements)
-		- [Dynamically added elements](#dynamically-added-elements)
-			- [Known in advance](#known-in-advance)
-			- [Unknown in advance](#unknown-in-advance)
 	- [Compose architecture](#compose-architecture)
 - [iOS](#ios)
-	- [Accessibility Identifier](#accessibility-identifier)
-	- [Testing](#testing)
 
-# General
+## General
 
 **For elements that don't have an ID, the developer should by default add IDs when working on a feature/screen** (e.g., buttons, input fields, list containers and items, titles, etc.). Additionally, if needed, the tester will make a list of elements with missing IDs so that they can be added for test automation purposes. If the tester makes a list with proposed IDs, the developer can accept the proposed one if it makes sense or discuss with the tester to name it differently.
 
 While implementing IDs, the developer should sync with the responsible tester who will be doing the automated tests for IDs and implementation limitations. There shouldn’t be any compromises to the quality of features and usability when implementing these IDs.
 
-## Naming
+### Naming
 
 The IDs added to elements should be **unique** (most importantly - be unique on a specific screen). For that purpose, **prefixes and/or suffixes** can be used to define the ID of the component more precisely. That will be especially helpful in the case when the component consists of other sub-components which will also have IDs added to them.
 
