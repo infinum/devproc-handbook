@@ -63,7 +63,21 @@ In order to add IDs and access composables by resource ID using UiAutomator, the
 
 *Example:*
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:70%;">![Android Compose Example](/img/test_automation/TA_Android_Compose.png)</span>
+```kotlin
+Scaffold(
+    // Enables for all composables in the hierarchy.
+    modifier = Modifier.semantics {
+        testTagsAsResourceId = true
+    }
+){
+    // Modifier.testTag is accessible from UiAutomator for composables nested here.
+    LazyColumn(
+        modifier = Modifier.testTag("myLazyColumn")
+    ){
+        // content
+    }
+}
+```
 
 ## iOS
 
