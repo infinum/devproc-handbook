@@ -1,10 +1,10 @@
 **Chapters:**
 
 - [General](#general)
+- [iOS](#ios)
 - [Android](#android)
 	- [XML architecture](#xml-architecture)
 	- [Compose architecture](#compose-architecture)
-- [iOS](#ios)
 
 ## General
 
@@ -21,6 +21,24 @@ The IDs added to elements should be **unique** (most importantly - be unique on 
 <span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![Android Naming Example](/img/test_automation/TA_Naming.png)</span>
 
 Developers can follow naming conventions for their respective platform (camelCase, snake_case, or other).
+
+## iOS
+
+### Accessibility Identifier
+
+For UI testing purposes Apple provides us with a so-called accessibilityIdentifier. It is meant to "be used to uniquely identify a UI element in the scripts we write using the UI Automation interfaces". Accessibility identifiers aren't accessed by e.g. VoiceOver. They are part of the `UIAccessibilityIdentification` protocol, which consists of methods that associate a **unique identifier** with elements in a user interface. The only strict requirement for adhering to this protocol is defining the `accessibilityIdentifier` property.
+
+`UIAccessibilityIdentification: var accessibilityIdentifier: String? { get set }`
+
+The mobile developer needs to set accessibilityIdentifiers on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). An accessibility identifier can be set using storyboards or programmatically. In our app, we should set it programmatically to have more readable code and to make changes easier if some identifier needs to be updated.
+
+For list items that are not known in advance, the developer should implement an ID to the list container. After that, the testers should be able to get those elements as children of the container. Also, in case of adding IDs to individual list items that are not known in advance, it is alright if the same ID is implemented to them because the automation framework can locate such elements by combining the ID and text of the element.
+
+### Testing
+
+Implementation can be tested using [Accessibility Inspector](https://developer.apple.com/videos/play/wwdc2019/257/), and checking `Basic → Identifier`.
+
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![iOS Accessibility Inspector](/img/test_automation/TA_iOS_Accessibility_Inspector.png)</span>
 
 ## Android
 
@@ -78,21 +96,3 @@ Scaffold(
     }
 }
 ```
-
-## iOS
-
-### Accessibility Identifier
-
-For UI testing purposes Apple provides us with a so-called accessibilityIdentifier. It is meant to "be used to uniquely identify a UI element in the scripts we write using the UI Automation interfaces". Accessibility identifiers aren't accessed by e.g. VoiceOver. They are part of the `UIAccessibilityIdentification` protocol, which consists of methods that associate a **unique identifier** with elements in a user interface. The only strict requirement for adhering to this protocol is defining the `accessibilityIdentifier` property.
-
-`UIAccessibilityIdentification: var accessibilityIdentifier: String? { get set }`
-
-The mobile developer needs to set accessibilityIdentifiers on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). An accessibility identifier can be set using storyboards or programmatically. In our app, we should set it programmatically to have more readable code and to make changes easier if some identifier needs to be updated.
-
-For list items that are not known in advance, the developer should implement an ID to the list container. After that, the testers should be able to get those elements as children of the container. Also, in case of adding IDs to individual list items that are not known in advance, it is alright if the same ID is implemented to them because the automation framework can locate such elements by combining the ID and text of the element.
-
-### Testing
-
-Implementation can be tested using [Accessibility Inspector](https://developer.apple.com/videos/play/wwdc2019/257/), and checking `Basic → Identifier`.
-
-<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![iOS Accessibility Inspector](/img/test_automation/TA_iOS_Accessibility_Inspector.png)</span>
