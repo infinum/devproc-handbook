@@ -10,7 +10,7 @@ The IDs added to elements should be **unique** (most importantly - be unique on 
 
 *Example:* 
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![Android Naming Example](/img/test_automation/TA_Naming.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![Android Naming Example](/img/test_automation/mobile/TA_Naming.png)</span>
 
 Developers can follow naming conventions for their respective platform (*camelCase*, *snake_case*, or other).
 
@@ -26,7 +26,7 @@ For list items that are not known in advance, the developer should implement an 
 
 Implementation can be tested using [Accessibility Inspector](https://developer.apple.com/videos/play/wwdc2019/257/), and checking `Basic → Identifier`.
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![iOS Accessibility Inspector](/img/test_automation/TA_iOS_Accessibility_Inspector.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![iOS Accessibility Inspector](/img/test_automation/mobile/TA_iOS_Accessibility_Inspector.png)</span>
 
 ## Android
 
@@ -40,7 +40,7 @@ For static elements such as buttons, titles and others that are not dynamically 
 
 `fragment_my_profile.xml` has the profile name of the currently logged-in user. Even though the text that is displayed can be different, the ID will always be the same for that text.
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Android Static Element Example](/img/test_automation/TA_Android_Static.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Android Static Element Example](/img/test_automation/mobile/TA_Android_Static.png)</span>
 
 #### Dynamically added elements
 
@@ -53,7 +53,7 @@ For the ones that are known in advance, they should be set in ids.xml file as it
 
 `fragment_select_appliance_category.xml` contains `list_item_appliance_category.xml` as elements of a list. Since categories are known in advance they can be set up in `ids.xml` and added programmatically to the list item.
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Android Dynamic Element Example](/img/test_automation/TA_Android_Dynamic.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Android Dynamic Element Example](/img/test_automation/mobile/TA_Android_Dynamic.png)</span>
 
 ##### Unknown in advance
 
