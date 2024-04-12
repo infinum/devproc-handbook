@@ -1,3 +1,5 @@
+Ensuring a smooth mobile app experience requires thorough testing. Test automation streamlines this process, but finding the right elements on your app can be tricky. This article explores how to add element IDs that simplify test automation for both iOS and Android.
+
 ## General
 
 **For elements that don't have an ID, the developer should by default add IDs when working on a feature/screen** (e.g., buttons, input fields, list containers and items, titles, etc.). Additionally, if needed, the tester will make a list of elements with missing IDs so that they can be added for test automation purposes. If the tester makes a list with proposed IDs, the developer can accept the proposed one if it makes sense or discuss with the tester to name it differently.
