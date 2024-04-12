@@ -30,7 +30,7 @@ For UI testing purposes Apple provides us with a so-called [accessibilityIdentif
 
 `UIAccessibilityIdentification: var accessibilityIdentifier: String? { get set }`
 
-The mobile developer needs to set accessibilityIdentifiers on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). An accessibility identifier can be set using storyboards or programmatically.
+The mobile developer needs to set `accessibilityIdentifier` on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). An accessibility identifier can be set using storyboards or programmatically.
 
 For list items that are not known in advance, the developer should implement an ID to the list container. After that, the testers should be able to get those elements as children of the container. Also, in case of adding IDs to individual list items that are not known in advance, it is alright if the same ID is implemented to them because the automation framework can locate such elements by combining the ID and text of the element.
 
