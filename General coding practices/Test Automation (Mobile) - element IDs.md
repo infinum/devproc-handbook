@@ -18,9 +18,7 @@ Developers can follow naming conventions for their respective platform (*camelCa
 
 ### Accessibility Identifier
 
-For UI testing purposes Apple provides us with a so-called [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier). It is meant to "be used to uniquely identify a UI element in the scripts we write using the UI Automation interfaces". Accessibility identifiers aren't accessed by e.g. VoiceOver. They are part of the `UIAccessibilityIdentification` protocol, which consists of methods that associate a **unique identifier** with elements in a user interface.
-
-The mobile developer needs to set `accessibilityIdentifier` on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). An accessibility identifier can be set using storyboards or programmatically.
+The mobile developer needs to set `accessibilityIdentifier` on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). An [accessibility identifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) can be set using storyboards or programmatically.
 
 For list items that are not known in advance, the developer should implement an ID to the list container. After that, the testers should be able to get those elements as children of the container. Also, in case of adding IDs to individual list items that are not known in advance, it is alright if the same ID is implemented to them because the automation framework can locate such elements by combining the ID and text of the element.
 
