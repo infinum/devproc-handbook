@@ -20,7 +20,7 @@ Developers can follow naming conventions for their respective platform (*camelCa
 
 ### Accessibility Identifier
 
-Developers should set `accessibilityIdentifier` on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). [Accessibility identifiers](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) can be set using storyboards or programmatically.
+`accessibilityIdentifier` should be set on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). [Accessibility identifiers](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) can be set using storyboards or programmatically.
 
 NOTE: `accessibilityIdentifier` isn't used for text-to-speech accessibility (accessed by e.g. VoiceOver).
 
@@ -52,7 +52,7 @@ Dynamically added elements can be split into 2 categories. Ones that are known i
 
 ##### Known in advance
 
-For the ones that are known in advance, they should be set in ids.xml file as item of type="id". After that, they can be programmatically set to the ID of an element that they represent.
+For the ones that are known in advance, they should be set in `ids.xml` file as item of `type="id"`. After that, they can be programmatically set to the ID of an element that they represent.
 
 *Example:*
 
