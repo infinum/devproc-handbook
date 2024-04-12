@@ -2,9 +2,9 @@ Ensuring a smooth mobile app experience requires thorough testing. Test automati
 
 ## General
 
-**For elements that don't have an ID, the developer should by default add IDs when working on a feature/screen** (e.g., buttons, input fields, list containers and items, titles, etc.). Additionally, if needed, the tester will make a list of elements with missing IDs so that they can be added for test automation purposes. If the tester makes a list with proposed IDs, the developer can accept the proposed one if it makes sense or discuss with the tester to name it differently.
+**For elements that don't have an ID, developers should by default add IDs when working on a feature/screen** (e.g., buttons, input fields, list containers and items, titles, etc.). Additionally, if needed, the tester will make a list of elements with missing IDs so that they can be added for test automation purposes. If the tester makes a list with proposed IDs, developers can accept the proposed one if it makes sense or discuss with the tester to name it differently.
 
-While implementing IDs, the developer should sync with the responsible tester who will be doing the automated tests for IDs and implementation limitations. There shouldn’t be any compromises to the quality of features and usability when implementing these IDs.
+While implementing IDs, developers should sync with the responsible tester who will be writing the automated tests for IDs and implementation limitations. There shouldn't be any compromises to the quality of features and usability when implementing these IDs.
 
 ### Naming
 
@@ -20,9 +20,11 @@ Developers can follow naming conventions for their respective platform (*camelCa
 
 ### Accessibility Identifier
 
-The mobile developer needs to set `accessibilityIdentifier` on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). An [accessibility identifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) can be set using storyboards or programmatically.
+`accessibilityIdentifier` needs to be set on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). [Accessibility identifiers](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) can be set using storyboards or programmatically.
 
-For list items that are not known in advance, the developer should implement an ID to the list container. After that, the testers should be able to get those elements as children of the container. Also, in case of adding IDs to individual list items that are not known in advance, it is alright if the same ID is implemented to them because the automation framework can locate such elements by combining the ID and text of the element.
+NOTE: `accessibilityIdentifier` isn't used for text-to-speech accessibility (accessed by e.g. VoiceOver).
+
+For list items that are not known in advance, an ID should be implemented to the list container. After that, when writing automated tests we should be able to get those elements as children of the container. Also, in case of adding IDs to individual list items that are not known in advance, it is alright if the same ID is implemented to them because the automation framework can locate such elements by combining the ID and text of the element.
 
 ### Testing
 
@@ -59,7 +61,7 @@ For the ones that are known in advance, they should be set in ids.xml file as it
 
 ##### Unknown in advance
 
-For list items that are not known in advance, the developer should implement an ID to the list container. After that, the testers should be able to get those elements as children of the container. Also, in case of adding IDs to individual list items that are not known in advance, it is alright if the same ID is implemented to them because the automation framework can locate such elements by combining the ID and text of the element.
+For list items that are not known in advance, an ID should be implemented to the list container. After that, when writing automated tests we should be able to get those elements as children of the container. Also, in case of adding IDs to individual list items that are not known in advance, it is alright if the same ID is implemented to them because the automation framework can locate such elements by combining the ID and text of the element.
 
 NOTE: The `contentDescription` attribute should not be influenced by test automation since that attribute is used for the text-to-speech accessibility function. Such attributes will be defined on the accessibility-level implementation. If the tester needs to find an element by its text, the test automation framework can easily find an element by the displayed text, without the need to use `contentDescription`.
 
@@ -67,7 +69,7 @@ NOTE: The `contentDescription` attribute should not be influenced by test automa
 
 By default, composables are accessible from [UiAutomator](https://developer.android.com/training/testing/other-components/ui-automator) only by their convenient descriptors (displayed text, content description, etc.). 
 
-In order to add IDs and access composables by resource ID using UiAutomator, the developer first needs to enable the semantic property `testTagAsResourceId` for the particular composables subtree. This will map `testTag` properties to resource IDs. Enabling it at the top-level composable will ensure all of the nested composables with `Modifier.testTag(tag)` are accessible from UiAutomator and allow the automation framework to find the UI components from a given test tag.
+In order to add IDs and access composables by resource ID using UiAutomator, you first need to enable the semantic property `testTagAsResourceId` for the particular composables subtree. This will map `testTag` properties to resource IDs. Enabling it at the top-level composable will ensure all of the nested composables with `Modifier.testTag(tag)` are accessible from UiAutomator and allow the automation framework to find the UI components from a given test tag.
 
 *Example:*
 
