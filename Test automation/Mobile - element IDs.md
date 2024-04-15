@@ -20,7 +20,7 @@ Developers can follow naming conventions for their respective platform (*camelCa
 
 ### Accessibility Identifier
 
-For UI testing purposes Apple provides us with a so-called [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier). It is meant to "be used to uniquely identify a UI element in the scripts we write using the UI Automation interfaces". Accessibility identifiers aren't accessed by e.g. VoiceOver. They are part of the `UIAccessibilityIdentification` protocol, which consists of methods that associate a **unique identifier** with elements in a user interface. The only strict requirement for adhering to this protocol is defining the `accessibilityIdentifier` property.
+For UI testing purposes Apple provides us with a so-called [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier). It is meant to "be used to uniquely identify a UI element in the scripts we write using the UI Automation interfaces". Accessibility identifiers aren't accessed by e.g. VoiceOver. They are part of the `UIAccessibilityIdentification` protocol, which consists of methods that associate a **unique identifier** with elements in a user interface.
 
 `accessibilityIdentifier` should be set on elements that are being inspected as a part of test automation (e.g., buttons, input fields, list containers and items, titles, etc.). An accessibility identifier can be set using storyboards or programmatically.
 
