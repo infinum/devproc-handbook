@@ -33,7 +33,7 @@ Ballpark estimates are often based on vaguely explained feature requests. This i
 Your assumptions might look like:
 
 * Search is assumed to be lexical (exact word) instead of fuzzy
-* Filtering is implemented client side and the dataset is of a moderate enough size (hundreds of elements)
+* Filtering is implemented on the client side and the dataset is of a moderate enough size (hundreds of elements)
 * It is acceptable if search results sometimes show slightly out‑of‑date information, as long as they update after a refresh.
 * The navigation bar has a dedicated mobile 'drawer' version
 
