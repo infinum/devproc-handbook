@@ -49,7 +49,7 @@ You could also encounter features that you believe can be improved with addition
 
 ### Ideal, Expected and Worst case estimations
 
-The difference between ideal, expected, and worst case estimations should not be based on differences in scope. As mentioned in the `Related features` section, scope differences should be included as additional rows in the table. What the difference should be based on is things possibly taking longer because of known and unknown risks:
+**The difference between ideal, expected, and worst case estimations should not be based on differences in scope**. As mentioned in the `Related features` section, scope differences should be included as additional rows in the table. What the difference should be based on is things possibly taking longer because of known and unknown risks:
 
 * You expect challenges integrating with a poorly documented API, or a system developed by a third party.
 * The final design could be significantly more complicated than the wireframe you are basing the estimate on.
